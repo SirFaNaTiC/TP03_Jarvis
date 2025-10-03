@@ -20,9 +20,9 @@ const expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts);
 app.set('layout','./layouts/layout'); // layout par défaut
 
-const exampleRouter = require('./routes/exampleRouter');
+const jarvisRouter = require('./routes/jarvisRouter');
 
-app.use('/', exampleRouter);
+app.use('/', jarvisRouter);
 
 
 // Routeur pour la page d'accueil

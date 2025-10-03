@@ -1,0 +1,11 @@
+<% if (route === 'form' && id === 'stark' && code === 'tony') { %>
+    <div style="color: white;">
+        <h2>Welcome, Tony Stark!</h2>
+        <p>You have successfully connected to Jarvis.</p>
+    </div>
+<% } else { %>
+    <div style="color: white;">
+        <h2>Connection Failed</h2>
+        <p>Invalid username or code. Please try again.</p>
+    </div>
+<% } %>

@@ -1,3 +1,3 @@
 module.exports.example = (req, res) => {
-    res.render('pages/example', { route: 'test' });
+    res.render('pages/example');
 }

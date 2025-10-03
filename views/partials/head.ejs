@@ -8,13 +8,18 @@
 </head>
 <body> -->
 <header>
-    <div class="title">
-        <b>Jarvis</b> 
+    <div class="header-left">
+        <div class="title">
+            <b>Jarvis</b>
+        </div>
     </div>
-    <div>
-        <button class="button" onclick="window.location.href='/form'">Connection</button>
-    <div>
-
+    <div class="header-right">
+        <% if (typeof(route) === 'undefined') { %>
+            <button class="button" onclick="window.location.href='/form'">Connection</button>
+        <% } else if (route === 'form' && id !== 'stark' && code !== 'tony') { %>
+            <button class="button" onclick="window.location.href='/form'">Connection</button>
+        <% } else if (route === 'form' && id === 'stark' && code === 'tony') { %>
+            <button class="button" onclick="window.location.href='/'">Déconnexion</button>
+        <% } %>
     </div>
-    
 </header>

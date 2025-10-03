@@ -7,6 +7,10 @@ const app = express();
 // Inclusion du module 'path' pour gérer les chemins de fichiers
 const path = require('path');
 
+// Pour le décodage des requêtes POST/PUT
+app.use(express.json());
+app.use(express.urlencoded({ extended: false }));
+
 
 // Servir des fichiers statiques (CSS, images, JS côté client, etc.)
 // Le dossier 'public' est utilisé pour servir les fichiers statiques

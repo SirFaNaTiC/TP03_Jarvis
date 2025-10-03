@@ -21,14 +21,16 @@ app.use(expressLayouts);
 app.set('layout','./layouts/layout'); // layout par défaut
 
 const jarvisRouter = require('./routes/jarvisRouter');
+const formRouter = require('./routes/formRouter');
 
 app.use('/', jarvisRouter);
 
+app.use('/form', formRouter);
 
-// Routeur pour la page d'accueil
-app.get("/*path",(req,res)=>{
-    res.redirect('/');
-});
+// // Routeur pour la page d'accueil
+// app.get("/*path",(req,res)=>{
+//     res.redirect('/');
+// });
 
 // Export de l'application pour qu'elle puisse être utilisée par d'autres modules
 module.exports = app;

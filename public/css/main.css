@@ -97,6 +97,75 @@ texte{
     align-self: left;
 }
 .title{
-    padding-right: 65%;
-    align-self: left;
+    text-align: left;
+    color: black;
+    font-size: 2.5rem;
+}
+
+/* Styles pour le formulaire */
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.simple-form {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    min-width: 1000px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+    font-size: 1rem;
+    text-align: left;
+}
+
+.form-control {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.form-control:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+.btn-submit {
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.btn-submit:hover {
+    background: #0056b3;
 }
